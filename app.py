@@ -97,7 +97,7 @@ def find():
     movie_title = movie_info['title']
     year = movie_info['release_date']
     description = movie_info['overview']
-    img_url = f'https://image.tmdb.org/t/p/w500{movie_info['poster_path']}'
+    img_url = f"https://image.tmdb.org/t/p/w500{movie_info['poster_path']}"
     new_movie = Movie(title = movie_title, year = year, description = description,img_url = img_url)
     db.session.add(new_movie)
     db.session.commit()
