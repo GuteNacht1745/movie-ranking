@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Movie{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h1 class="heading">Add a Movie</h1>
+    <form method="post" action="{{ url_for('select') }}">
+        <h2>Enter a movie</h2>
+        <input type="text" name="movie-title" class="form-control mb-4">
+        <input type="submit" class="btn btn-primary">
+    </form>
+
+</div>
+{% endblock %}
